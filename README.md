@@ -1,5 +1,11 @@
 # Mailosaur Helper for CodeceptJS
 
+## Installation
+
+```js
+npm i codeceptjs-mailosaur --save
+```
+
 ## Configuration
 
 This plugin should be added in `codecept.conf.js`
