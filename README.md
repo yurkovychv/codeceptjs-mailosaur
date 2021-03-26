@@ -26,7 +26,7 @@ Example:
   //...
    plugins: {
     Mailosaur: {
-          require: 'codeceptjs-mailosaur',
+          require: 'codeceptjs-mailosaurhelper',
           apiKey: MAILOSAUR_API_KEY,
           serverId: MAILOSAUR_SERVER_ID,
           timeout: 15000,
