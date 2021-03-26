@@ -12,7 +12,7 @@ It gives users the ability to perform the following operation:
 ## Installation
 
 ```js
-npm i codeceptjs-mailosaur --save
+npm i codeceptjs-mailosaurhelper --save
 ```
 
 ## Configuration

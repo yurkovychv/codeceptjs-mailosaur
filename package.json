@@ -1,6 +1,6 @@
 {
-  "name": "codeceptjs-mailosaur",
-  "version": "1.0.2",
+  "name": "codeceptjs-mailosaurhelper",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {

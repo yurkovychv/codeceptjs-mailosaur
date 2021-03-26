@@ -37,7 +37,6 @@ class Mailosaur extends Helper {
    or contains a particular link if it was provided
   */
   seeLinkInMessage(message, link) {
-
     if (link) {
       const result = message.text.links.find(({ href }) => href === link)?.href;
 
@@ -82,8 +81,13 @@ class Mailosaur extends Helper {
   }
 
   // generateNewEmail generates and returns email in format "<firstName>.<lastName>@<serverId>.mailosaur.net"
-  generateNewEmail() {
-    return `${faker.name.firstName()}.${faker.name.lastName()}@${this.serverId}.mailosaur.net`;
+  // if "prefix" was passed it returns email in format "<prefix>@<serverId>.mailosaur.net"
+  generateNewEmail(prefix) {
+    if (prefix) {
+      return `${prefix}@${this.serverId}.mailosaur.net`
+    } else {
+      return `${faker.name.firstName()}.${faker.name.lastName()}@${this.serverId}.mailosaur.net`;
+    }
   }
 
   // seeTextInMessage verifies that message Body contains text
