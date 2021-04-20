@@ -38,7 +38,7 @@ class Mailosaur extends Helper {
   */
   seeLinkInMessage(message, link) {
     if (link) {
-      const result = message.text.links.find(({ href }) => href === link)?.href;
+      const result = message.text.links.find(({ href }) => href === link).href;
 
       assert.ok(
           result,
